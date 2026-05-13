@@ -244,7 +244,7 @@ report=Report()
 # Create a route for a get request
 # Set the route's path to the root
 @app.route('/')
-def get():
+def home():
 
     # Call the initialized report
     # pass the integer 1 and an instance
@@ -260,7 +260,7 @@ def get():
 # parameterize the employee ID 
 # to a string datatype
 @app.route('/employee/{ID}')
-def get(ID:str):
+def employee_page(ID:str):
 
     # Call the initialized report
     # pass the ID and an instance
@@ -276,7 +276,7 @@ def get(ID:str):
 # parameterize the team ID 
 # to a string datatype
 @app.route('/team/{ID}')
-def get(ID:str):
+def team_page(ID:str):
 
     # Call the initialized report
     # pass the id and an instance
